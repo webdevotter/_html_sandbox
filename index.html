@@ -5,10 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Div, Span, Id, & Class</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .enhance {
+      color: yellow;
+      background-color: black;
+    }
+  </style>
 </head>
 <body>
   <div id="main-header">
-    <h1>My Website</h1>
+    <h1 class="card">My Website</h1>
     <p>A site about me</p>
   </div>
   <ul>
@@ -16,11 +29,11 @@
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-  <div id="about">
+  <div id="about" class="card">
     <h3>About</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione qui provident molestias quaerat tenetur, numquam voluptatum sequi quae. Illo tenetur, velit quod cum quos voluptate commodi ducimus autem fugiat dolorum beatae odit suscipit hic assumenda aspernatur nam magnam rerum eaque harum nulla quam, molestiae a consectetur! Voluptatibus, amet facilis?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione qui <span class="enhance"> provident molestias quaerat tenetur, numquam voluptatum sequi quae.</span> Illo tenetur, velit quod cum quos voluptate commodi ducimus autem fugiat dolorum beatae odit suscipit hic assumenda aspernatur nam magnam rerum eaque harum nulla quam, molestiae a consectetur! Voluptatibus, amet facilis?</p>
   </div>
-  <div id="contact">
+  <div id="contact" class="card">
     <h3>Contact Me</h3>
     <ul>
       <li>Address: 123 Main St Boston, MA</li>
@@ -29,7 +42,7 @@
     </ul>
   </div>
   <div id="footer">
-    <p>Copyright 2019</p>
+    <p>&copy; 2019</p>
   </div>
 </body>
 </html>
